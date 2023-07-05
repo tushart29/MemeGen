@@ -1,0 +1,40 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+
+Below is an example of how to map in JavaScript 
+function App() {
+    const thingsArray = ["Thing 1", "Thing 2"]
+    
+    /**
+     * Challenge: Map over the thingsArray to generate
+     * a <p> element for each item and render them on the page
+     * below the button
+     */
+    
+    const thingsElements = thingsArray.map(thing => <p key={thing}>{thing}</p>)
+    
+    return (
+        <div>
+            <button>Add Item</button>
+            {thingsElements}
+        </div>
+    )
+}
+
+ReactDOM.render(<App />, document.getElementById('root'));
+
+
+- to update the data on the page or the UI, need to access react state. state allows us to hook into the component, so whenever we update
+the state, react will change the data on the UI
+
+- props are passed when you call the component such as <Main name=Tushar />. In main componen,t you can access by prop.name. prop should
+be an argument in the function like "e"xport default function Contact(props)"
+
+- props refer to the properties begin passed into a component in order for it to work propertly. A comonent receving props
+are not allowed to change those props data
+
+- state is any vaules that is managed by the component. any time you have changing values that should be saved or displayed
+you will likely use a state
+
+- React.useState("Hello") returns an array
