@@ -38,3 +38,5 @@ are not allowed to change those props data
 you will likely use a state
 
 - React.useState("Hello") returns an array
+
+- never modify the state directly. use the method that is returned when using React.useState
